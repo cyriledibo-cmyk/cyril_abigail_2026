@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Cyril & Abigail Wedding — 17 October 2026">
+  <title>Cyril & Abigail | Wedding 2026</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="site-header">
+  <nav class="navbar container">
+    <a class="brand" href="#home">C <span>&</span> A</a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Open menu">☰</button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#gallery">Gallery</a></li>
+      <li><a href="#programs">Program Lineup</a></li>
+      <li><a href="#rsvp">RSVP</a></li>
+      <li><a href="#messages">Messages</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+<section id="home" class="hero">
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <p class="eyebrow">Together with their families</p>
+    <h1>Cyril <span>&amp;</span> Abigail</h1>
+    <div class="gold-line"></div>
+    <p class="hero-subtitle">Invite you to celebrate their marriage</p>
+    <p class="hero-date">17 October 2026</p>
+    <div id="countdown" class="countdown"></div>
+    <a class="button" href="#rsvp">RSVP</a>
+  </div>
+</section>
+
+<section id="gallery" class="section">
+  <div class="section-heading">
+    <p class="eyebrow">Beautiful memories</p>
+    <h2>Our Gallery</h2>
+    <p>Moments leading to our special day.</p>
+  </div>
+  <div class="gallery-grid">
+    <img src="images/photo1.jpg" alt="Cyril and Abigail">
+    <img src="images/photo2.jpg" alt="Wedding memory">
+    <img src="images/photo3.jpg" alt="Wedding memory">
+    <img src="images/photo4.jpg" alt="Wedding memory">
+    <img src="images/photo5.jpg" alt="Wedding memory">
+    <img src="images/photo6.jpg" alt="Wedding memory">
+  </div>
+</section>
+
+<section id="programs" class="section soft">
+  <div class="section-heading">
+    <p class="eyebrow">The celebration</p>
+    <h2>Program Lineup</h2>
+    <p>A simple guide to the day's celebration.</p>
+  </div>
+  <div class="timeline">
+    <article><time>09:00 AM</time><div><h3>Marriage Ceremony</h3><p>Marriage rites and exchange of vows.</p></div></article>
+    <article><time>10:30 AM</time><div><h3>Photography</h3><p>Family, bridal party and couple photographs.</p></div></article>
+    <article><time>12:00 PM</time><div><h3>Reception</h3><p>Dinner, speeches and celebration.</p></div></article>
+    <article><time>2:30 PM</time><div><h3>Departure</h3><p>Thanks for coming</p></div></article>
+  </div>
+</section>
+
+<section id="rsvp" class="section">
+  <div class="section-heading">
+    <p class="eyebrow">We would love to celebrate with you</p>
+    <h2>RSVP</h2>
+  </div>
+  <form id="rsvpForm" class="card form">
+    <div class="two-col">
+      <label>Full name<input name="name" required></label>
+      <label>Email<input name="email" type="email"></label>
+    </div>
+    <div class="two-col">
+      <label>Phone<input name="phone"></label>
+      <label>Guests<input name="guests" type="number" min="1" max="10" value="1" required></label>
+    </div>
+    <label>Attendance
+      <select name="attendance" required>
+        <option value="">Select</option>
+        <option value="YES">Yes, I will attend</option>
+        <option value="NO">Sorry, I cannot attend</option>
+      </select>
+    </label>
+    <label>Message<textarea name="message" rows="4"></textarea></label>
+    <button class="button" type="submit">Send RSVP</button>
+    <p id="rsvpStatus" class="status"></p>
+  </form>
+</section>
+
+<section id="messages" class="section soft">
+  <div class="section-heading">
+    <p class="eyebrow">Words from loved ones</p>
+    <h2>Messages</h2>
+  </div>
+  <form id="messageForm" class="card form">
+    <label>Your name<input name="name" required></label>
+    <label>Your message<textarea name="message" rows="5" required></textarea></label>
+    <button class="button" type="submit">Leave a Message</button>
+    <p id="messageStatus" class="status"></p>
+  </form>
+  <div id="messagesList" class="messages-list"></div>
+</section>
+</main>
+
+<footer>
+  <p>With love, <strong>Cyril &amp; Abigail</strong></p>
+  <p>© 2026</p>
+</footer>
+<script src="js/app.js"></script>
+</body>
+</html>
